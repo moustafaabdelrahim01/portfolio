@@ -2,7 +2,7 @@ import { MapPin, Languages, GraduationCap, Code2 } from "lucide-react";
 
 const facts = [
   { icon: MapPin, label: "Based in", value: "Warsaw, Poland" },
-  { icon: Code2, label: "Main stack", value: " HTML, CSS ,React · JavaScript , typescript" },
+  { icon: Code2, label: "Main stack", value: " HTML, CSS ,React · JavaScript , TypeScript" },
   { icon: GraduationCap, label: "Currently", value: "IT & Computer Science" },
   {
     icon: Languages,
@@ -38,7 +38,7 @@ export default function About() {
         </p>
         <p>
           I'm passionate about building modern, responsive, and user-friendly
-          web interfaces using HTML , CSS , React, JavaScript, and Tailwind CSS. Through
+          web interfaces using HTML , CSS , React, JavaScript, TypeScript, and Tailwind CSS. Through
           academic and personal projects, I'm continuously developing my
           technical skills and exploring new ways to turn ideas into practical
           digital experiences.
