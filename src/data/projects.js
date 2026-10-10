@@ -5,6 +5,6 @@ export const projects = [
     tech: ["React", "JavaScript", "Tailwind CSS"],
     live: "https://movie-explorer-seven-wine.vercel.app",
     github: "https://github.com/moustafaabdelrahim01/movie-explorer",
-    image: "",
+    image: "/projects/movie.png",
   },
 ];

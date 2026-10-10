@@ -1,12 +1,10 @@
-import { useState } from 'react'
-import heroImg from './assets/hero.png'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import './App.css'
-
-import Navbar from "./components/Navbar.jsx";
+import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import Projects from "./components/Projects";
+import About from "./components/About";
+import Contact from "./components/Contact";
+import Footer from "./components/Footer";
+import Reveal from "./components/Reveal";
 
 export default function App() {
   return (
@@ -14,8 +12,11 @@ export default function App() {
       <Navbar />
       <main>
         <Hero />
-        <Projects />
+        <Reveal><Projects /></Reveal>
+        <Reveal><About /></Reveal>
+        <Reveal><Contact /></Reveal>
       </main>
+      <Footer />
     </>
   );
 }

@@ -1,4 +1,5 @@
 @import "tailwindcss";
+
 @theme {
   --color-bg: #111218;
   --color-card: #1b1c25;
@@ -6,11 +7,41 @@
   --color-accent: #a78bfa;
 }
 
-html {
-  scroll-behavior: smooth;
-}
+
 
 body {
   background-color: var(--color-bg);
   color: #e5e7eb;
+}
+
+section {
+  scroll-margin-top: 4rem;
+}
+
+/* ظهور تدريجي مع النزول */
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: none;
+}
+
+/* حركة دخول الـ Hero */
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-up {
+  animation: fade-up 0.8s ease-out both;
 }
